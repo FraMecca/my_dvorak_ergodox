@@ -53,15 +53,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 1: Symbol Layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |        |  F1  |  F2  |  F3  |  F4  |  F5  |      |           |      |  F6  |  F7  |  F8  |  F9  |  F10 |   F11  |
+ * |        |  F1  |  F2  |  F3  |  F4  |  F5  |      |           |      |      |  ~   |  `   |    |  F10 |   F11  |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |TAB     |   !  |   ?  |   {  |   }  |   |  |      |           |      |    / |   7  |   8  |   9  |   *  |   DEL  |
+ * |TAB     |   !  |   @  |   {  |   }  |   |  |      |           |      |    / |   7  |   8  |   9  |   *  |   DEL  |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | ESC    |  [   | ]   |   (  |   )  |   `   |------|           |------| &    |   4  |   5  |   6  |   +  | =      |
+ * |        |  #   |  $   |   (  |   )  |   -  |------|           |------| &    |   4  |   5  |   6  |   +  | =      |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | LSHIFT |   %  |   ^  |   #  |   @  |   ~  |      |           |      |   0  |   1  |   2  |   3  |   \  |  LALT  |
+ * | LSHIFT |   %  |   ^  |   [  |   ]  |   ~  |      |           |      |   0  |   1  |   2  |   3  |   \  |  LALT  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |      |      |      |      |      |                                       |      |    . |   0  |   =  |      |
+ *   |      |      |      |      |      |                                       |      |      |      |      |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        |      |      |       |      |      |
@@ -75,15 +75,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [SYMB] = KEYMAP(
        // left hand
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TAB,KC_EXLM,KC_AT,  KC_LCBR,KC_RCBR,KC_PIPE,KC_TRNS,
-       KC_ESC,KC_LBRC,KC_RBRC, KC_LPRN,KC_RPRN,KC_GRV,
-       KC_LSFT,KC_PERC,KC_CIRC,KC_HASH,KC_DLR,KC_TILD,KC_TRNS,
+       KC_TAB,KC_EXLM,KC_AT,     KC_LCBR,  KC_RCBR, KC_BSLS, KC_TRNS,
+       KC_TRNS,KC_HASH,KC_DLR, KC_LPRN,KC_RPRN,KC_MINS,
+       KC_LSFT,KC_PERC,KC_CIRC,KC_LBRC,KC_RBRC,KC_TILD,KC_TRNS,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,
                                                KC_PGDN,
                                KC_TRNS,KC_TRNS,KC_TRNS,
        // right hand
-       KC_TRNS,     KC_TRNS,   LALT (KC_F1),	LALT (KC_F2),	LALT (KC_F3),	LALT (KC_F4),   LALT (KC_F5),
+       KC_TRNS,     KC_TRNS,   KC_TILD,	 KC_GRV,	LALT (KC_F3),	LALT (KC_F4),   LALT (KC_F5),
        KC_TRNS, 	KC_SLSH,   KC_7,   			KC_8,    		KC_9,    		KC_ASTR, 		KC_DEL,
 		            KC_AMPR, 	KC_4,   	KC_5,    	   KC_6,    		KC_PLUS, 		KC_EQL,
        KC_TRNS, KC_0, KC_1,   KC_2,    KC_3,    KC_BSLS, KC_LALT,
