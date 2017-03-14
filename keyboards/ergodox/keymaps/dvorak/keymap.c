@@ -24,8 +24,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      |      |       	   |        |      |
- *                                 | MO 1 |sp    |------|       |------|  Enter |Mo 2  |
- *                                 |      |ace   |win+ '|       | win+j|        |      |
+ *                                 | MO 1 |win   |------|       |------|  altgr |Mo 2  |
+ *                                 |      |j     |win+ '|       | rightc|        |      |
  *                                 `--------------------'       `----------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -38,17 +38,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,        CTL_T(KC_SCLN), KC_Q,    KC_J,   KC_K,   KC_X,   ALL_T(KC_NO),
         LT(SYMB,KC_GRV),KC_QUOT,      LALT(KC_LSFT),  KC_LEFT,KC_SPC, 				// not used
                                               ALT_T(KC_APP),  KC_SPC,
-                                                              KC_RGHT,
-                                               MO(1) ,LALT (KC_COMM),KC_END,
+                                                              LALT (KC_J),
+                                               MO(1) ,LALT (KC_COMM),LALT (KC_J),
         // right hand
-       	   KC_TRNS,     KC_TRNS,   KC_TILD,	 KC_GRV,	LALT (KC_F3),	LALT (F4),   LALT (F5),
+       	   KC_TRNS,     KC_TRNS,   KC_TILD,	 KC_GRV,	KC_RGHT,	LALT (F4),   LALT (F5),
              TG(2),       KC_F,			   KC_G,		    KC_C,   		KC_R,   		KC_L,             KC_BSPACE,
                           KC_D,   KC_H,   KC_T,   KC_N,   KC_S,  	 KC_LCTRL,
              MEH_T(KC_NO),KC_B,   KC_M,   KC_W,   KC_V,   KC_Z,      KC_LALT,
                                   KC_ENT,  KC_DOWN,KC_LBRC,KC_RBRC,          KC_FN1,
              KC_LALT,        CTL_T(KC_ESC),
              KC_APP,
-             	KC_HOME,LALT(KC_J), MO(2) 
+             	KC_HOME,KC_RALT, MO(2) 
     ),
 /* Keymap 1: Symbol Layer
  *
