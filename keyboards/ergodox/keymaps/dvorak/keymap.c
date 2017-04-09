@@ -32,23 +32,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
-       	KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TAB,        KC_QUOT,        KC_COMM, KC_DOT, KC_P,   KC_Y,   TG(1),
-        KC_ESC,        KC_A,           KC_O,    KC_E,   KC_U,   KC_I,
-        KC_LSFT,        CTL_T(KC_SCLN), KC_Q,    KC_J,   KC_K,   KC_X,   ALL_T(KC_NO),
-        LT(SYMB,KC_GRV),KC_QUOT,      LALT(KC_LSFT),  KC_LEFT   MO(1), 				// not used
-                                              ALT_T(KC_APP),  KC_SPC,
-                                                              LALT (KC_J),
-                                               KC_SPC ,LALT (KC_COMM),LALT (KC_J),
+       	KC_TRNS,       KC_TRNS,        KC_TRNS, KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TAB,        KC_QUOT,        KC_COMM, KC_DOT,    KC_P,    KC_Y,    KC_TRNS,
+        KC_ESC,        KC_A,           KC_O,    KC_E,      KC_U,    KC_I,
+        KC_LSFT,       CTL_T(KC_SCLN), KC_Q,    KC_J,      KC_K,    KC_X,    KC_TRNS,
+        KC_TRNS,       KC_TRNS,        KC_TRNS, KC_TRNS,    MO(1), 				// not used
+                                                ALT_T(KC_APP),     KC_SPC,
+                                                                   LALT (KC_J),
+                                                KC_SPC ,LALT (KC_COMM),LALT (KC_J),
         // right hand
-       	   KC_TRNS,     KC_TRNS,   KC_TILD,	 KC_GRV,	KC_RGHT,	LALT (F4),   LALT (F5),
-             TG(2),       KC_F,			   KC_G,		    KC_C,   		KC_R,   		KC_L,             KC_BSPACE,
-                          KC_D,   KC_H,   KC_T,   KC_N,   KC_S,  	 KC_LCTRL,
-             MEH_T(KC_NO),KC_B,   KC_M,   KC_W,   KC_V,   KC_Z,      KC_LALT,
-                                  MO(2),  KC_DOWN,KC_LBRC,KC_RBRC,          KC_FN1,
-             KC_LALT,        CTL_T(KC_ESC),
+       	     KC_TRNS,     KC_TRNS,        KC_TILD,	    KC_GRV,  	KC_RGHT,	LALT (F4),   LALT (F5),
+             KC_TRNS,     KC_F,			  KC_G,		    KC_C,   	KC_R,   	KC_L,         KC_BSPACE,
+                          KC_D,           KC_H,         KC_T,       KC_N,       KC_S,  	      KC_LCTRL,
+             KC_TRNS,     KC_B,           KC_M,         KC_W,       KC_V,       KC_Z,         KC_LALT,
+                                          MO(2),        KC_TRNS,    KC_TRNS,    KC_TRNS,      KC_TRNS,
+             KC_LALT,    CTL_T(KC_ESC),
              TG(2),
-             	TG(2),KC_RALT, KC_ENT
+             KC_TRNS,    KC_RALT, KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
