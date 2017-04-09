@@ -36,8 +36,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,        KC_QUOT,        KC_COMM, KC_DOT, KC_P,   KC_Y,   TG(1),
         KC_ESC,        KC_A,           KC_O,    KC_E,   KC_U,   KC_I,
         KC_LSFT,        CTL_T(KC_SCLN), KC_Q,    KC_J,   KC_K,   KC_X,   ALL_T(KC_NO),
-        LT(SYMB,KC_GRV),KC_QUOT,      LALT(KC_LSFT),  KC_LEFT,KC_SPC, 				// not used
-                                              ALT_T(KC_APP),  MO(1),
+        LT(SYMB,KC_GRV),KC_QUOT,      LALT(KC_LSFT),  KC_LEFT   MO(1), 				// not used
+                                              ALT_T(KC_APP),  KC_SPC,
                                                               LALT (KC_J),
                                                KC_SPC ,LALT (KC_COMM),LALT (KC_J),
         // right hand
