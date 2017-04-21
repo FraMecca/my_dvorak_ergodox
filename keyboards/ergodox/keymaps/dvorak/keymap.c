@@ -10,7 +10,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |   =    |   1  |   2  |   3  |   4  |   5  | LEFT |           | RIGHT|   6  |   7  |   8  |   9  |   0  |   \    |
+ * |   =    |   1  |   2  |   3  |   4  |   5  | LEFT |           | RIGHT|   6  |   7  |   8  |   9  |   0  |   CAPS |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | TAB    |   '  |   ,  |   .  |   P  |   Y  |  L1  |           |  L1  |   F  |   G  |   C  |   R  |   L  | BSPACE |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                    LALT (KC_J),
                                                 KC_SPC ,LALT (KC_COMM),LALT (KC_J),
         // right hand
-       	     KC_TRNS,     KC_TRNS,        KC_TILD,	    KC_GRV,  	KC_RGHT,	LALT (F4),   LALT (F5),
+       	     KC_TRNS,     KC_TRNS,        KC_TILD,	    KC_GRV,  	KC_RGHT,	LALT (F4),   KC_CAPS,
              KC_TRNS,     KC_F,			  KC_G,		    KC_C,   	KC_R,   	KC_L,         KC_BSPACE,
                           KC_D,           KC_H,         KC_T,       KC_N,       KC_S,  	      KC_LCTRL,
              KC_TRNS,     KC_B,           KC_M,         KC_W,       KC_V,       KC_Z,         KC_LALT,
