@@ -124,15 +124,16 @@ KEYMAP(
                                                     KC_TRNS,
                                   KC_TRNS, KC_TRNS, KC_TRNS,
     // right hand
-       KC_TRNS , KC_F13, KC_F13, KC_F14, KC_F15, KC_F16, KC_TRNS,
-       KC_TRNS,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,
-       		     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F12,
-       KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                          KC_TRNS, KC_TRNS,KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_TRNS,
-       KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS
-),
+        // right hand
+       	     KC_TRNS,     KC_TRNS,        KC_TILD,	    KC_GRV,  	KC_RGHT,	LALT (F4),   KC_CAPS,
+             KC_TRNS,     KC_F1,		  KC_F2,		KC_F3,   	KC_F4,   	KC_F5,        KC_F6,
+                          KC_F7,          KC_F8,        KC_F9,      KC_F10,     KC_F11,       KC_F12,
+             KC_TRNS,     KC_F11,           KC_M,         KC_W,       KC_V,       KC_Z,         KC_LALT,
+                                          MO(2),        KC_TRNS,    KC_TRNS,    KC_TRNS,      KC_TRNS,
+             KC_LALT,    KC_TRNS,
+             KC_TRNS,
+             TG(2),    KC_RALT, KC_ENT
+    ),
 };
 
 const uint16_t PROGMEM fn_actions[] = {
