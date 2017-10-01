@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, \
 
  CTL_T(KC_ESC), SFT_T(KC_TAB),LT(_OTHERS, KC_SPACE), \
-                                                   	   LT(_SYMBOLS, KC_ENT), KC_BSPACE, KC_DEL                 \
+                                                   	   LT(_SYMBOLS, KC_ENT), KC_BSPACE, ALT_T(KC_DEL)                 \
 ),
 
 /* _SYMBOLS
